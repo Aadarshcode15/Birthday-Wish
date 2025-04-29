@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="confetti"></canvas>
+
+    <div class="container">
+        <h1 id="animatedText" class="fade-in">Happy Birthday!</h1>
+        <img src="cake.png" alt="Birthday Cake" class="cake fade-in">
+        <p class="fade-in">Wishing you all the happiness and success in the world!</p>
+
+        <div class="buttons">
+            <button onclick="toggleSong()">🔊 Play/Pause Song</button>
+            <button onclick="openPopup()">🎁 Special Message</button>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>🎈 Special Birthday Message 🎈</h2>
+            <p>May your day be filled with love, laughter, and endless happiness! 🎂🎉✨</p>
+        </div>
+    </div>
+
+    <audio id="birthdaySong" src="happy_birthday.mp3" autoplay loop></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
